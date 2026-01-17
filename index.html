@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghazi Ben Ghozlen | Portfolio</title>
+    <meta name="description"
+        content="Portfolio of Ghazi Ben Ghozlen - Agile Software Engineer & AI Researcher specializing in Computer Vision and Web Development.">
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Space+Grotesk:wght@300;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.12.36/build/spline-viewer.js"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader-content">
+            <span class="loader-text">Ghazi.Dev</span>
+            <div class="loader-bar"></div>
+        </div>
+    </div>
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <header class="header">
+        <a href="#" class="logo">Ghazi Ben Ghozlen<span class="accent-dot">.</span></a>
+
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+            <span class="sr-only">Menu</span>
+            <div class="hamburger"></div>
+        </button>
+
+        <nav>
+            <ul id="primary-navigation" class="primary-navigation flex" data-visible="false">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="academic/index.html">Academic</a></li>
+                <li><a href="skills/index.html">Skills</a></li>
+                <li><a href="experience/index.html">Experience</a></li>
+                <li><a href="projects/index.html">Projects</a></li>
+                <li><a href="quiz/index.html">Quiz</a></li>
+                <li><a href="contact/index.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="hero-bg-container">
+                <spline-viewer url="https://prod.spline.design/SFifLLCWekrFnf9K/scene.splinecode"></spline-viewer>
+                <!-- Fallback/Overlay -->
+                <div class="hero-overlay"></div>
+            </div>
+
+            <div class="container hero-content">
+                <h1 class="hero-title">
+                    <span class="block-reveal">Research.</span><br>
+                    <span class="block-reveal">Code.</span><br>
+                    <span class="block-reveal highlight-text">Create.</span>
+                </h1>
+                <p class="hero-subtitle fade-in-up">
+                    Engineering Student & AI Researcher transforming ideas into reality with <span class="txt-rotate"
+                        data-period="2000"
+                        data-rotate='[ "Computer Vision.", "Web Development.", "Deep Learning." ]'></span>
+                </p>
+                <div class="hero-cta fade-in-up" style="animation-delay: 0.4s;">
+                    <a href="cv-5.pdf" class="btn btn-primary" target="_blank">View CV</a>
+                    <a href="contact/index.html" class="btn btn-secondary">Contact Me</a>
+                </div>
+            </div>
+
+            <div class="scroll-indicator">
+                <span>Scroll</span>
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Brief Intro Section -->
+        <section class="section-padding">
+            <div class="container">
+                <div class="about-text fade-in-up text-center-max">
+                    <h2 class="section-title">Creative Developer & AI Researcher</h2>
+                    <p class="lead" style="margin-top: 1.5rem;">
+                        Hi, I'm Ghazi Ben Ghozlen. I bridge the gap between complex AI algorithms and intuitive web
+                        experiences.
+                        Specializing in Computer Vision, Deep Learning, and Modern Web Development.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Navigation Gateway -->
+        <section class="section-padding" style="padding-top: 0;">
+            <div class="container">
+                <div class="projects-grid">
+                    <!-- Academic Card -->
+                    <a href="academic/index.html" class="project-card tilt-card" data-tilt style="text-decoration: none;">
+                        <div class="project-content gateway-card-content">
+                            <div class="gateway-icon" style="color: var(--primary-color);">🎓</div>
+                            <h3 class="project-title">Academic Path</h3>
+                            <p class="project-desc">My educational journey and degrees.</p>
+                        </div>
+                    </a>
+
+                    <!-- Skills Card -->
+                    <a href="skills/index.html" class="project-card tilt-card" data-tilt style="text-decoration: none;">
+                        <div class="project-content gateway-card-content">
+                            <div class="gateway-icon" style="color: var(--accent-color);">⚡</div>
+                            <h3 class="project-title">Skills & Tech</h3>
+                            <p class="project-desc">Programming languages and tools.</p>
+                        </div>
+                    </a>
+
+                    <!-- Experience Card -->
+                    <a href="experience/index.html" class="project-card tilt-card" data-tilt style="text-decoration: none;">
+                        <div class="project-content gateway-card-content">
+                            <div class="gateway-icon" style="color: var(--primary-color);">💼</div>
+                            <h3 class="project-title">Experience</h3>
+                            <p class="project-desc">Internships and professional roles.</p>
+                        </div>
+                    </a>
+
+                    <!-- Projects Card -->
+                    <a href="projects/index.html" class="project-card tilt-card" data-tilt style="text-decoration: none;">
+                        <div class="project-content gateway-card-content">
+                            <div class="gateway-icon" style="color: var(--accent-color);">🚀</div>
+                            <h3 class="project-title">Projects</h3>
+                            <p class="project-desc">My featured work and case studies.</p>
+                        </div>
+                    </a>
+
+                    <!-- Quiz Card -->
+                    <a href="quiz/index.html" class="project-card tilt-card" data-tilt style="text-decoration: none;">
+                        <div class="project-content gateway-card-content">
+                            <div class="gateway-icon" style="color: var(--primary-color);">❓</div>
+                            <h3 class="project-title">Take the Quiz</h3>
+                            <p class="project-desc">Test your Web Dev knowledge.</p>
+                        </div>
+                    </a>
+
+                    <!-- Contact Card -->
+                    <a href="contact/index.html" class="project-card tilt-card" data-tilt style="text-decoration: none;">
+                        <div class="project-content gateway-card-content">
+                            <div class="gateway-icon" style="color: var(--accent-color);">✉️</div>
+                            <h3 class="project-title">Contact</h3>
+                            <p class="project-desc">Get in touch with me.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/global.js"></script>
+</body>
+
+</html>

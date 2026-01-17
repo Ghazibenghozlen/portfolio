@@ -1,0 +1,36 @@
+/* Skills specific styles */
+.skills-wrapper {
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: 12px;
+    border: var(--glass-border);
+    backdrop-filter: blur(5px);
+}
+
+.skills-title {
+    font-family: var(--font-heading);
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    color: var(--text-main);
+}
+
+.skills-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.tag {
+    padding: 0.5rem 1rem;
+    background: rgba(100, 255, 218, 0.1);
+    color: var(--primary-color);
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-family: var(--font-heading);
+    transition: var(--transition);
+}
+
+.tag:hover {
+    background: rgba(100, 255, 218, 0.2);
+    transform: translateY(-2px);
+}
