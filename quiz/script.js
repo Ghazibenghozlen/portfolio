@@ -7,7 +7,7 @@ if (quizForm) {
  * Quiz Page Specific Logic
  * Manages question data, score tracking, and UI state transitions.
  */
-    const questions = [
+    const mlQuestions = [
         {
             q: "What is the main difference between Supervised and Unsupervised learning?",
             options: ["Supervised uses labeled data, Unsupervised uses unlabeled data", "Supervised is faster", "Unsupervised uses neural networks only"],
