@@ -88,8 +88,8 @@ animated-portfolio/
 
 1. **Clone or download the repository**
    ```bash
-   git clone <repository-url>
-   cd animated-portfolio
+   git clone https://github.com/Ghazibenghozlen/portfolio.git
+   cd portfolio
    ```
 
 2. **Open with a local server** (recommended)
