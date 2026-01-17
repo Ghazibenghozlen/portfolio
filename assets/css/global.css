@@ -1,3 +1,7 @@
+/**
+ * Global Design System Tokens
+ * Contains all primary variables for colors, typography, and shared transitions.
+ */
 :root {
     --bg-color: #050510;
     --card-bg: rgba(255, 255, 255, 0.03);
@@ -13,69 +17,6 @@
     --transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
-/* Preloader */
-.preloader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: var(--bg-color);
-    z-index: 99999;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
-}
-
-.preloader.hidden {
-    opacity: 0;
-    visibility: hidden;
-}
-
-.loader-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-}
-
-.loader-text {
-    font-family: var(--font-heading);
-    letter-spacing: 2px;
-    color: var(--primary-color);
-    text-transform: uppercase;
-}
-
-.loader-bar {
-    width: 150px;
-    height: 2px;
-    background: rgba(255, 255, 255, 0.1);
-    position: relative;
-    overflow: hidden;
-    border-radius: 2px;
-}
-
-.loader-bar::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 40%;
-    height: 100%;
-    background: var(--primary-color);
-    animation: loading 1.5s infinite ease-in-out;
-}
-
-@keyframes loading {
-    0% {
-        left: -40%;
-    }
-
-    100% {
-        left: 100%;
-    }
-}
 
 /* Reset & Base */
 *,
@@ -182,12 +123,6 @@ body:hover .cursor-outline.expanded {
     padding: 100px 0;
 }
 
-.block-reveal {
-    display: inline-block;
-    opacity: 0;
-    transform: translateY(20px);
-    animation: slideUpFade 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
-}
 
 .fade-in-up {
     opacity: 0;
@@ -198,14 +133,6 @@ body:hover .cursor-outline.expanded {
 .fade-in-up.visible {
     opacity: 1;
     transform: translateY(0);
-}
-
-.highlight-text {
-    background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: 700;
 }
 
 /* Header */
@@ -296,93 +223,6 @@ body:hover .cursor-outline.expanded {
     z-index: 2000;
 }
 
-/* Hero Section */
-.hero-section {
-    position: relative;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-}
-
-.hero-bg-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-}
-
-.hero-bg-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0.4;
-    animation: breathe 10s infinite alternate;
-    display: none;
-    /* Hide static image */
-}
-
-spline-viewer {
-    width: calc(100% + 100px);
-    height: calc(100% + 100px);
-    border: none;
-    outline: none;
-    position: absolute;
-    top: 50%;
-    left: 70%;
-    /* Moved to the right */
-    transform: translate(-50%, -50%);
-}
-
-.hero-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, transparent 0%, var(--bg-color) 100%);
-    pointer-events: none;
-    /* Allow events to reach Spline */
-}
-
-.hero-content {
-    position: relative;
-    z-index: 1;
-    pointer-events: none;
-    /* Allow events to pass through empty areas */
-    margin-right: auto;
-    margin-left: 5%;
-    max-width: 650px;
-}
-
-.hero-title,
-.hero-subtitle,
-.hero-cta {
-    pointer-events: auto;
-    /* Re-enable events for text and buttons */
-}
-
-.hero-title {
-    font-family: var(--font-heading);
-    font-size: clamp(3rem, 10vw, 5rem);
-    line-height: 1.1;
-    margin-bottom: 1.5rem;
-}
-
-.hero-subtitle {
-    font-size: clamp(1rem, 2.5vw, 1.5rem);
-    color: var(--text-muted);
-    max-width: 600px;
-    margin-bottom: 2.5rem;
-}
-
-.hero-cta {
-    display: flex;
-    gap: 1.5rem;
-}
-
 /* Buttons */
 .btn {
     display: inline-block;
@@ -420,40 +260,6 @@ spline-viewer {
     transform: translateY(-3px);
 }
 
-/* Scroll Indicator */
-.scroll-indicator {
-    position: absolute;
-    bottom: 2rem;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-    color: var(--text-muted);
-    font-size: 0.8rem;
-    letter-spacing: 2px;
-}
-
-.mouse {
-    width: 26px;
-    height: 42px;
-    border: 2px solid var(--text-muted);
-    border-radius: 20px;
-    position: relative;
-}
-
-.wheel {
-    width: 2px;
-    height: 8px;
-    background-color: var(--primary-color);
-    position: absolute;
-    top: 6px;
-    left: 50%;
-    transform: translateX(-50%);
-    border-radius: 2px;
-    animation: scroll 2s infinite;
-}
 
 /* Section Header */
 .section-header {
@@ -494,37 +300,6 @@ spline-viewer {
     margin-bottom: 1.5rem;
 }
 
-.stats-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    margin-top: 2rem;
-}
-
-.stat-item {
-    display: flex;
-    flex-direction: column;
-}
-
-.stat-number {
-    font-family: var(--font-heading);
-    font-size: 3rem;
-    font-weight: 700;
-    color: var(--text-main);
-    line-height: 1;
-}
-
-.plus {
-    color: var(--primary-color);
-    font-size: 1.5rem;
-    vertical-align: super;
-}
-
-.stat-label {
-    font-size: 0.9rem;
-    color: var(--text-muted);
-    margin-top: 0.5rem;
-}
 
 /* Shared Components */
 .skills-tags {
@@ -549,13 +324,17 @@ spline-viewer {
 }
 
 
-/* Projects Section */
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2.5rem;
+.text-center-max {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
+/**
+ * Shared Card Components
+ * Standardized cards used across Home and Projects pages.
+ * Implements glassmorphism and 3D transform support.
+ */
 .project-card {
     background: var(--card-bg);
     border-radius: 12px;
@@ -634,25 +413,6 @@ spline-viewer {
     color: var(--text-main);
 }
 
-.gateway-card-content {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-}
-
-.gateway-icon {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-}
-
-.text-center-max {
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
 .project-desc {
     color: var(--text-muted);
     margin-bottom: 1.5rem;
@@ -667,7 +427,6 @@ spline-viewer {
     color: var(--primary-color);
     font-family: var(--font-heading);
 }
-
 
 
 

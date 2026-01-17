@@ -1,1 +1,3 @@
-// Contact specific scripts
+/**
+ * Contact Page Specific Logic
+ */

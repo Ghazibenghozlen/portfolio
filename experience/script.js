@@ -1,6 +1,7 @@
 /**
- * Experience Page Scripts
+ * Experience Page Specific Logic
  */
+// Placeholder for future experience-related logic.
 
 // Observe elements with .scale-in class
 const scaleObserverOptions = {
@@ -22,4 +23,4 @@ document.querySelectorAll('.scale-in').forEach(el => {
     scaleObserver.observe(el);
 });
 
-// We rely on global.js for .fade-in-up animations which are also used here.
+// rely on global.js for .fade-in-up animations which are also used here.

@@ -14,21 +14,32 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Space+Grotesk:wght@300;500;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="home/home.css">
     <script type="module" src="https://unpkg.com/@splinetool/viewer@1.12.36/build/spline-viewer.js"></script>
     <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
 </head>
 
 <body>
-    <!-- Preloader -->
+    <!-- 
+        PRELOADER SECTION 
+        Displays a simple loading animation until the window is fully loaded.
+        Controls: home/home.js
+    -->
     <div class="preloader">
         <div class="loader-content">
             <span class="loader-text">Ghazi.Dev</span>
             <div class="loader-bar"></div>
         </div>
     </div>
+
+    <!-- CUSTOM CURSOR: follower elements -->
     <div class="cursor-dot" data-cursor-dot></div>
     <div class="cursor-outline" data-cursor-outline></div>
 
+    <!-- 
+        HEADER & NAVIGATION 
+        Fixed top navigation with a scrolling background effect.
+    -->
     <header class="header">
         <a href="#" class="logo">Ghazi Ben Ghozlen<span class="accent-dot">.</span></a>
 
@@ -51,6 +62,12 @@
     </header>
 
     <main>
+        <!-- 
+            HERO SECTION
+            Features a Spline 3D viewer and a typing text rotation effect.
+            Styles: home/home.css
+            Logic: home/home.js
+        -->
         <section id="home" class="hero-section">
             <div class="hero-bg-container">
                 <spline-viewer url="https://prod.spline.design/SFifLLCWekrFnf9K/scene.splinecode"></spline-viewer>
@@ -97,12 +114,17 @@
             </div>
         </section>
 
-        <!-- Navigation Gateway -->
+        <!-- 
+            NAVIGATION GATEWAY 
+            A grid of cards linking to different sections of the portfolio.
+            Features a hover-tilt effect.
+        -->
         <section class="section-padding" style="padding-top: 0;">
             <div class="container">
                 <div class="projects-grid">
                     <!-- Academic Card -->
-                    <a href="academic/index.html" class="project-card tilt-card" data-tilt style="text-decoration: none;">
+                    <a href="academic/index.html" class="project-card tilt-card" data-tilt
+                        style="text-decoration: none;">
                         <div class="project-content gateway-card-content">
                             <div class="gateway-icon" style="color: var(--primary-color);">🎓</div>
                             <h3 class="project-title">Academic Path</h3>
@@ -120,7 +142,8 @@
                     </a>
 
                     <!-- Experience Card -->
-                    <a href="experience/index.html" class="project-card tilt-card" data-tilt style="text-decoration: none;">
+                    <a href="experience/index.html" class="project-card tilt-card" data-tilt
+                        style="text-decoration: none;">
                         <div class="project-content gateway-card-content">
                             <div class="gateway-icon" style="color: var(--primary-color);">💼</div>
                             <h3 class="project-title">Experience</h3>
@@ -129,7 +152,8 @@
                     </a>
 
                     <!-- Projects Card -->
-                    <a href="projects/index.html" class="project-card tilt-card" data-tilt style="text-decoration: none;">
+                    <a href="projects/index.html" class="project-card tilt-card" data-tilt
+                        style="text-decoration: none;">
                         <div class="project-content gateway-card-content">
                             <div class="gateway-icon" style="color: var(--accent-color);">🚀</div>
                             <h3 class="project-title">Projects</h3>
@@ -147,7 +171,8 @@
                     </a>
 
                     <!-- Contact Card -->
-                    <a href="contact/index.html" class="project-card tilt-card" data-tilt style="text-decoration: none;">
+                    <a href="contact/index.html" class="project-card tilt-card" data-tilt
+                        style="text-decoration: none;">
                         <div class="project-content gateway-card-content">
                             <div class="gateway-icon" style="color: var(--accent-color);">✉️</div>
                             <h3 class="project-title">Contact</h3>
@@ -164,8 +189,8 @@
             <p>&copy; 2026 Portfolio. All rights reserved.</p>
         </div>
     </footer>
-
     <script src="assets/js/global.js"></script>
+    <script src="home/home.js"></script>
 </body>
 
 </html>

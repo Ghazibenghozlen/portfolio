@@ -1,1 +1,4 @@
-// Academic specific scripts
+/**
+ * Academic Page Specific Logic
+ */
+// Placeholder for future academic milestones interactions.

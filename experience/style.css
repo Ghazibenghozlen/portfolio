@@ -1,6 +1,11 @@
 /* Experience Page Styles */
 
-.timeline {
+/**
+ * Experience Page Specific Styles
+ * Visualizes the professional journey using a structured vertical timeline.
+ */
+
+.experience-timeline {
     position: relative;
     max-width: 1200px;
     margin: 0 auto;

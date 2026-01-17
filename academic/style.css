@@ -1,4 +1,10 @@
 /* Timeline Styles */
+/**
+ * Academic Page Specific Styles
+ * Implements a vertical timeline layout for educational milestones.
+ */
+
+/* Timeline Container Logic */
 .timeline-container {
     position: relative;
     padding-left: 2rem;

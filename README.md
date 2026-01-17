@@ -64,6 +64,9 @@ animated-portfolio/
 │   ├── index.html        # Work experience page
 │   ├── script.js         # Page-specific scripts
 │   └── style.css         # Page-specific styles
+├── home/
+│   ├── home.js         # Page-specific scripts
+│   └── home.css         # Page-specific styles
 ├── projects/
 │   ├── index.html        # Projects portfolio page
 │   ├── script.js         # Page-specific scripts
